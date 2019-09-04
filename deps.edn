@@ -1,0 +1,10 @@
+{:aliases {:jar {:extra-deps {seancorfield/depstar {:mvn/version "RELEASE"}}
+                 :main-opts ["-m" "hf.depstar.jar" "target/app.jar"]}
+           :install {:extra-deps {deps-deploy {:mvn/version "RELEASE"}}
+                     :main-opts ["-m" "deps-deploy.deps-deploy" "install" "target/app.jar" "true"]}
+           :deploy {:extra-deps {deps-deploy {:mvn/version "RELEASE"}}
+                    :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "target/app.jar" "true"]}}
+ :paths ["src"]
+ :deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}
+        nrepl {:mvn/version "0.6.0"}
+        cider/cider-nrepl {:mvn/version "0.21.1"}}}
