@@ -6,5 +6,5 @@
                     :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "target/app.jar" "true"]}}
  :paths ["src"]
  :deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}
-        nrepl {:mvn/version "0.6.0"}
-        cider/cider-nrepl {:mvn/version "0.21.1"}}}
+        nrepl {:mvn/version "0.7.0"}
+        cider/cider-nrepl {:mvn/version "0.24.0"}}}
